@@ -11,6 +11,7 @@ b = 1; %initial bias
 %see help for plotpv and plotpc
 pt = p';
 tt = t';
+figure(1);
 plotpv(pt,tt)
 plotpc([w(1,1) w(1,2) w(1,3)],b)
 
@@ -64,7 +65,8 @@ epoch = iter/8
 
 %plot output of weight after training
 figure
-pt = p'
-tt = t'
+pt = p';
+tt = t';
+figure(2);
 plotpv(pt,tt)
 plotpc([w(1,1) w(1,2) w(1,3)],b)
