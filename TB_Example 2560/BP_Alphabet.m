@@ -25,7 +25,7 @@ output=sim(net,Al(:,26));
 [m,A_Id]=max(output)
 
 %test for A with noise generated
-Anoise=Al(:,6)+0.20*randn(size(Al(:,6)));
+Anoise=Al(:,6)+0.10*randn(size(Al(:,6)));
 
 figure
 plotchar(Anoise)
